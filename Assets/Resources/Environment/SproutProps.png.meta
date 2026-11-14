@@ -1,0 +1,569 @@
+fileFormatVersion: 2
+guid: c9cbb3339c837754eb68c2fea8ca7352
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7863847473107248193
+    second: SproutProps_0
+  - first:
+      213: -2941678828359548515
+    second: SproutProps_1
+  - first:
+      213: 4363589349126354535
+    second: SproutProps_2
+  - first:
+      213: 6774528899327740409
+    second: SproutProps_3
+  - first:
+      213: 2900212817798432640
+    second: SproutProps_4
+  - first:
+      213: 1478859267709981971
+    second: SproutProps_5
+  - first:
+      213: -4983199655324409488
+    second: SproutProps_6
+  - first:
+      213: -8519717698099254391
+    second: SproutProps_7
+  - first:
+      213: 80534731824363248
+    second: SproutProps_8
+  - first:
+      213: 2654020985402715398
+    second: SproutProps_9
+  - first:
+      213: 8698369102023171024
+    second: SproutProps_10
+  - first:
+      213: 3844337386100042989
+    second: SproutProps_11
+  - first:
+      213: 5124938548637515804
+    second: SproutProps_12
+  - first:
+      213: -5113210944836227821
+    second: SproutProps_13
+  - first:
+      213: 6661659864868577101
+    second: SproutProps_14
+  - first:
+      213: 7912149188818052569
+    second: SproutProps_15
+  - first:
+      213: -744020557585369240
+    second: SproutProps_16
+  - first:
+      213: -8728053461015747342
+    second: SproutProps_17
+  - first:
+      213: 5341701405706149781
+    second: SproutProps_18
+  - first:
+      213: 343814667557590471
+    second: SproutProps_19
+  - first:
+      213: 950764768670007972
+    second: SproutProps_20
+  - first:
+      213: 7847517309301175514
+    second: SproutProps_21
+  - first:
+      213: -6758173651468814141
+    second: SproutProps_22
+  - first:
+      213: 739072744812367319
+    second: SproutProps_23
+  - first:
+      213: -8776540018042593570
+    second: SproutProps_24
+  - first:
+      213: 7729901289024875743
+    second: SproutProps_25
+  - first:
+      213: -870269401663069759
+    second: SproutProps_26
+  - first:
+      213: -3092396872111353256
+    second: SproutProps_27
+  - first:
+      213: -6689371836041669373
+    second: SproutProps_28
+  - first:
+      213: -4669676458160374706
+    second: SproutProps_29
+  - first:
+      213: -2651115383161883410
+    second: SproutProps_30
+  - first:
+      213: 7563213163790224862
+    second: SproutProps_31
+  - first:
+      213: 6444115650875501739
+    second: SproutProps_32
+  - first:
+      213: -2461052654948669053
+    second: SproutProps_33
+  - first:
+      213: -292934496996961755
+    second: SproutProps_34
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprout_tree_tall
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 51
+        width: 14
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 799bdee0bfcb12c4fabb262efdae92bc
+      internalID: -1251514992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprout_tree_oak
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 48
+        width: 24
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cee0280205bd18e4790ed7ad327b905d
+      internalID: 459399262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprout_tree_apple
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 48
+        width: 24
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17fd9e5ac0c70134f89cbe9890559e57
+      internalID: -1234573842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprout_rock_small
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 54
+        width: 10
+        height: 8
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d10d94979b6595743bf4aebb95f788c3
+      internalID: 478276541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprout_rock_large
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 50
+        width: 16
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83b46afe8617c6b4e9c8dec31077c20d
+      internalID: 990733630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprout_rock_big2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 1
+        width: 16
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0bdde3b4d4ffd244a1a25271afdc9e9
+      internalID: 1110983668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprout_mushroom_1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 65
+        width: 13
+        height: 13
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b52983b15de43774e894018974d2385d
+      internalID: 1975360112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprout_mushroom_2
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 65
+        width: 10
+        height: 11
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3053801525b41a34d8754838b132a17f
+      internalID: -1617052030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprout_bush_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccd0226294609c94583e4cf7d38af509
+      internalID: -148520492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprout_bush_2
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17169149dcac9f844809cbf2c9b81dc8
+      internalID: 241377730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprout_flower_y
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 34
+        width: 11
+        height: 9
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf0ff78cf969896429f708484e02f749
+      internalID: 1296152733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprout_flower_p
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 19
+        width: 11
+        height: 9
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a68b919021c4924bacf9e9b9a9662b8
+      internalID: -1072372077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprout_stump
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 34
+        width: 8
+        height: 10
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c8a9e2e8fb48654bbedb9f703246f0c
+      internalID: 1862971064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 98306d66630a53549a1ec7aafae46865
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SproutProps_0: -7863847473107248193
+      SproutProps_1: -2941678828359548515
+      SproutProps_10: 8698369102023171024
+      SproutProps_11: 3844337386100042989
+      SproutProps_12: 5124938548637515804
+      SproutProps_13: -5113210944836227821
+      SproutProps_14: 6661659864868577101
+      SproutProps_15: 7912149188818052569
+      SproutProps_16: -744020557585369240
+      SproutProps_17: -8728053461015747342
+      SproutProps_18: 5341701405706149781
+      SproutProps_19: 343814667557590471
+      SproutProps_2: 4363589349126354535
+      SproutProps_20: 950764768670007972
+      SproutProps_21: 7847517309301175514
+      SproutProps_22: -6758173651468814141
+      SproutProps_23: 739072744812367319
+      SproutProps_24: -8776540018042593570
+      SproutProps_25: 7729901289024875743
+      SproutProps_26: -870269401663069759
+      SproutProps_27: -3092396872111353256
+      SproutProps_28: -6689371836041669373
+      SproutProps_29: -4669676458160374706
+      SproutProps_3: 6774528899327740409
+      SproutProps_30: -2651115383161883410
+      SproutProps_31: 7563213163790224862
+      SproutProps_32: 6444115650875501739
+      SproutProps_33: -2461052654948669053
+      SproutProps_34: -292934496996961755
+      SproutProps_4: 2900212817798432640
+      SproutProps_5: 1478859267709981971
+      SproutProps_6: -4983199655324409488
+      SproutProps_7: -8519717698099254391
+      SproutProps_8: 80534731824363248
+      SproutProps_9: 2654020985402715398
+      sprout_bush_1: -148520492
+      sprout_bush_2: 241377730
+      sprout_flower_p: -1072372077
+      sprout_flower_y: 1296152733
+      sprout_mushroom_1: 1975360112
+      sprout_mushroom_2: -1617052030
+      sprout_rock_big2: 1110983668
+      sprout_rock_large: 990733630
+      sprout_rock_small: 478276541
+      sprout_stump: 1862971064
+      sprout_tree_apple: -1234573842
+      sprout_tree_oak: 459399262
+      sprout_tree_tall: -1251514992
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

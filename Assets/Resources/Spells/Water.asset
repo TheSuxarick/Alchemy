@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84bdaa737440892419fe967d66ab7aff, type: 3}
+  m_Name: Water
+  m_EditorClassIdentifier: Assembly-CSharp::Alchemy.SpellDrawing.SpellData
+  spellId: water
+  displayName: Water
+  description: Horizontal wave (~) glyph.
+  spellColor: {r: 0.2, g: 0.65, b: 1, a: 1}
+  maxCharges: 10
+  pinnedToOverlay: 1
+  attributes: 4
+  knockbackForce: 5
+  burnDuration: 0
+  stunDuration: 0
+  projectileSpeed: 13.5
+  projectileScale: 1
+  projectileLifetime: 1.5
+  baseDamage: 25
+  icon: {fileID: 0}
+  projectileFrames:
+  - {fileID: -1450252610, guid: 2c2f4a08908d5c549a38a8c0b49edec0, type: 3}
+  - {fileID: -774231799, guid: 2c2f4a08908d5c549a38a8c0b49edec0, type: 3}
+  - {fileID: -2048860896, guid: 2c2f4a08908d5c549a38a8c0b49edec0, type: 3}
+  - {fileID: -769311498, guid: 2c2f4a08908d5c549a38a8c0b49edec0, type: 3}
+  impactFrames:
+  - {fileID: -1253423537, guid: 2c2f4a08908d5c549a38a8c0b49edec0, type: 3}
+  - {fileID: -1051329472, guid: 2c2f4a08908d5c549a38a8c0b49edec0, type: 3}
+  - {fileID: 1086959037, guid: 2c2f4a08908d5c549a38a8c0b49edec0, type: 3}
+  - {fileID: -1862866811, guid: 2c2f4a08908d5c549a38a8c0b49edec0, type: 3}
+  - {fileID: -1835198228, guid: 2c2f4a08908d5c549a38a8c0b49edec0, type: 3}
+  - {fileID: -1437420385, guid: 2c2f4a08908d5c549a38a8c0b49edec0, type: 3}
+  - {fileID: 31860694, guid: 2c2f4a08908d5c549a38a8c0b49edec0, type: 3}
+  - {fileID: 221063689, guid: 2c2f4a08908d5c549a38a8c0b49edec0, type: 3}
+  projectileFps: 16
+  tintProjectileBySpellColor: 0
+  ingredientA: {fileID: 0}
+  ingredientB: {fileID: 0}
+  allowReverseStroke: 1
+  allowAnyStrokeOrder: 1
+  idealTemplates:
+  - label: Default Ideal
+    points:
+    - {x: 0.12, y: 0.5}
+    - {x: 0.1320635, y: 0.5238963}
+    - {x: 0.14412698, y: 0.5475551}
+    - {x: 0.15619047, y: 0.57074124}
+    - {x: 0.16825397, y: 0.59322435}
+    - {x: 0.18031746, y: 0.61478096}
+    - {x: 0.19238095, y: 0.6351968}
+    - {x: 0.20444444, y: 0.65426904}
+    - {x: 0.21650794, y: 0.67180806}
+    - {x: 0.22857143, y: 0.68763953}
+    - {x: 0.24063492, y: 0.7016062}
+    - {x: 0.25269842, y: 0.7135692}
+    - {x: 0.2647619, y: 0.7234097}
+    - {x: 0.2768254, y: 0.7310298}
+    - {x: 0.2888889, y: 0.7363539}
+    - {x: 0.30095237, y: 0.7393289}
+    - {x: 0.31301588, y: 0.7399254}
+    - {x: 0.32507938, y: 0.7381374}
+    - {x: 0.33714285, y: 0.7339827}
+    - {x: 0.34920636, y: 0.7275025}
+    - {x: 0.36126983, y: 0.7187614}
+    - {x: 0.37333333, y: 0.7078461}
+    - {x: 0.38539684, y: 0.6948651}
+    - {x: 0.3974603, y: 0.6799475}
+    - {x: 0.40952381, y: 0.66324145}
+    - {x: 0.4215873, y: 0.644913}
+    - {x: 0.4336508, y: 0.6251444}
+    - {x: 0.4457143, y: 0.60413206}
+    - {x: 0.45777777, y: 0.5820848}
+    - {x: 0.46984127, y: 0.55922174}
+    - {x: 0.48190475, y: 0.5357701}
+    - {x: 0.49396825, y: 0.51196295}
+    - {x: 0.50603175, y: 0.48803693}
+    - {x: 0.51809525, y: 0.4642298}
+    - {x: 0.53015876, y: 0.44077817}
+    - {x: 0.54222226, y: 0.4179151}
+    - {x: 0.5542857, y: 0.39586785}
+    - {x: 0.5663492, y: 0.3748555}
+    - {x: 0.5784127, y: 0.3550869}
+    - {x: 0.5904762, y: 0.3367585}
+    - {x: 0.6025397, y: 0.32005247}
+    - {x: 0.61460316, y: 0.30513483}
+    - {x: 0.62666667, y: 0.2921539}
+    - {x: 0.63873017, y: 0.28123856}
+    - {x: 0.6507937, y: 0.27249742}
+    - {x: 0.6628572, y: 0.2660173}
+    - {x: 0.6749206, y: 0.26186258}
+    - {x: 0.6869841, y: 0.2600746}
+    - {x: 0.6990476, y: 0.2606711}
+    - {x: 0.7111111, y: 0.26364616}
+    - {x: 0.72317463, y: 0.2689702}
+    - {x: 0.7352381, y: 0.27659032}
+    - {x: 0.7473016, y: 0.2864308}
+    - {x: 0.7593651, y: 0.2983938}
+    - {x: 0.7714286, y: 0.3123605}
+    - {x: 0.7834921, y: 0.32819197}
+    - {x: 0.79555553, y: 0.34573102}
+    - {x: 0.80761904, y: 0.3648032}
+    - {x: 0.81968254, y: 0.38521913}
+    - {x: 0.83174604, y: 0.40677568}
+    - {x: 0.84380955, y: 0.42925885}
+    - {x: 0.855873, y: 0.45244497}
+    - {x: 0.8679365, y: 0.4761038}
+    - {x: 0.88, y: 0.50000006}
+    strokes: []

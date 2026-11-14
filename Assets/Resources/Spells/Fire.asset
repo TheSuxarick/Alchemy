@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84bdaa737440892419fe967d66ab7aff, type: 3}
+  m_Name: Fire
+  m_EditorClassIdentifier: Assembly-CSharp::Alchemy.SpellDrawing.SpellData
+  spellId: fire
+  displayName: Fire
+  description: Triangle (^) flame glyph.
+  spellColor: {r: 1, g: 0.35, b: 0.15, a: 1}
+  maxCharges: 10
+  pinnedToOverlay: 1
+  attributes: 1
+  knockbackForce: 4.5
+  burnDuration: 4.5
+  stunDuration: 0
+  projectileSpeed: 13.5
+  projectileScale: 0.6
+  projectileLifetime: 1.5
+  baseDamage: 25
+  icon: {fileID: 0}
+  projectileFrames:
+  - {fileID: 1441213627, guid: 4782cc2929996f54980e6495be6bed0b, type: 3}
+  - {fileID: 1374698606, guid: 4782cc2929996f54980e6495be6bed0b, type: 3}
+  - {fileID: 1384153651, guid: 4782cc2929996f54980e6495be6bed0b, type: 3}
+  impactFrames:
+  - {fileID: -608360143, guid: 4782cc2929996f54980e6495be6bed0b, type: 3}
+  - {fileID: -1969597617, guid: 4782cc2929996f54980e6495be6bed0b, type: 3}
+  - {fileID: -1676612282, guid: 4782cc2929996f54980e6495be6bed0b, type: 3}
+  - {fileID: -1744930703, guid: 4782cc2929996f54980e6495be6bed0b, type: 3}
+  - {fileID: -672609079, guid: 4782cc2929996f54980e6495be6bed0b, type: 3}
+  - {fileID: 1772693680, guid: 4782cc2929996f54980e6495be6bed0b, type: 3}
+  - {fileID: -1305918396, guid: 4782cc2929996f54980e6495be6bed0b, type: 3}
+  - {fileID: -945499870, guid: 4782cc2929996f54980e6495be6bed0b, type: 3}
+  - {fileID: -159021766, guid: 4782cc2929996f54980e6495be6bed0b, type: 3}
+  projectileFps: 15
+  tintProjectileBySpellColor: 0
+  ingredientA: {fileID: 0}
+  ingredientB: {fileID: 0}
+  allowReverseStroke: 1
+  allowAnyStrokeOrder: 1
+  idealTemplates:
+  - label: Default Ideal
+    points:
+    - {x: 0.18, y: 0.2}
+    - {x: 0.19600001, y: 0.2325}
+    - {x: 0.21200001, y: 0.26500002}
+    - {x: 0.22800002, y: 0.2975}
+    - {x: 0.244, y: 0.33}
+    - {x: 0.26, y: 0.3625}
+    - {x: 0.27600002, y: 0.395}
+    - {x: 0.292, y: 0.4275}
+    - {x: 0.308, y: 0.46}
+    - {x: 0.324, y: 0.4925}
+    - {x: 0.34, y: 0.52500004}
+    - {x: 0.356, y: 0.5575}
+    - {x: 0.372, y: 0.59000003}
+    - {x: 0.38799998, y: 0.6225}
+    - {x: 0.40399998, y: 0.65500003}
+    - {x: 0.42000002, y: 0.6875}
+    - {x: 0.43600002, y: 0.72}
+    - {x: 0.45200002, y: 0.75250006}
+    - {x: 0.468, y: 0.785}
+    - {x: 0.484, y: 0.8175}
+    - {x: 0.5, y: 0.85}
+    - {x: 0.516, y: 0.8175}
+    - {x: 0.532, y: 0.785}
+    - {x: 0.548, y: 0.7525}
+    - {x: 0.564, y: 0.72}
+    - {x: 0.58, y: 0.6875}
+    - {x: 0.596, y: 0.65500003}
+    - {x: 0.612, y: 0.6225}
+    - {x: 0.628, y: 0.59000003}
+    - {x: 0.644, y: 0.5575}
+    - {x: 0.65999997, y: 0.52500004}
+    - {x: 0.676, y: 0.4925}
+    - {x: 0.69200003, y: 0.46}
+    - {x: 0.708, y: 0.42750004}
+    - {x: 0.724, y: 0.395}
+    - {x: 0.74, y: 0.3625}
+    - {x: 0.756, y: 0.33}
+    - {x: 0.772, y: 0.29749998}
+    - {x: 0.788, y: 0.26500002}
+    - {x: 0.80399996, y: 0.23250002}
+    - {x: 0.82, y: 0.2}
+    - {x: 0.788, y: 0.2}
+    - {x: 0.756, y: 0.2}
+    - {x: 0.724, y: 0.2}
+    - {x: 0.692, y: 0.2}
+    - {x: 0.65999997, y: 0.2}
+    - {x: 0.62799996, y: 0.2}
+    - {x: 0.596, y: 0.2}
+    - {x: 0.564, y: 0.2}
+    - {x: 0.532, y: 0.2}
+    - {x: 0.5, y: 0.2}
+    - {x: 0.468, y: 0.2}
+    - {x: 0.436, y: 0.2}
+    - {x: 0.404, y: 0.2}
+    - {x: 0.372, y: 0.2}
+    - {x: 0.34, y: 0.2}
+    - {x: 0.308, y: 0.2}
+    - {x: 0.276, y: 0.2}
+    - {x: 0.24400002, y: 0.2}
+    - {x: 0.21200001, y: 0.2}
+    strokes: []

@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84bdaa737440892419fe967d66ab7aff, type: 3}
+  m_Name: Lightning
+  m_EditorClassIdentifier: Assembly-CSharp::Alchemy.SpellDrawing.SpellData
+  spellId: lightning
+  displayName: Lightning
+  description: Custom alchemy spell.
+  spellColor: {r: 1, g: 0.9, b: 0.25, a: 1}
+  maxCharges: 10
+  pinnedToOverlay: 1
+  attributes: 16
+  knockbackForce: 5.5
+  burnDuration: 0
+  stunDuration: 1.2
+  projectileSpeed: 13.5
+  projectileScale: 1
+  projectileLifetime: 1.5
+  baseDamage: 25
+  icon: {fileID: 0}
+  projectileFrames:
+  - {fileID: 1475070520, guid: 5ae3bfa3ec7144c469b302b5a6cceb9e, type: 3}
+  - {fileID: -1485238271, guid: 5ae3bfa3ec7144c469b302b5a6cceb9e, type: 3}
+  - {fileID: -574946602, guid: 5ae3bfa3ec7144c469b302b5a6cceb9e, type: 3}
+  impactFrames:
+  - {fileID: 1586510394, guid: 5ae3bfa3ec7144c469b302b5a6cceb9e, type: 3}
+  - {fileID: -237403621, guid: 5ae3bfa3ec7144c469b302b5a6cceb9e, type: 3}
+  - {fileID: 220629828, guid: 5ae3bfa3ec7144c469b302b5a6cceb9e, type: 3}
+  - {fileID: -698065611, guid: 5ae3bfa3ec7144c469b302b5a6cceb9e, type: 3}
+  - {fileID: 1886806035, guid: 5ae3bfa3ec7144c469b302b5a6cceb9e, type: 3}
+  - {fileID: -2000119703, guid: 5ae3bfa3ec7144c469b302b5a6cceb9e, type: 3}
+  - {fileID: 1399198556, guid: 5ae3bfa3ec7144c469b302b5a6cceb9e, type: 3}
+  - {fileID: -1009216484, guid: 5ae3bfa3ec7144c469b302b5a6cceb9e, type: 3}
+  - {fileID: 51122128, guid: 5ae3bfa3ec7144c469b302b5a6cceb9e, type: 3}
+  projectileFps: 16
+  tintProjectileBySpellColor: 0
+  ingredientA: {fileID: 0}
+  ingredientB: {fileID: 0}
+  allowReverseStroke: 1
+  allowAnyStrokeOrder: 1
+  idealTemplates:
+  - label: Custom Ideal
+    points:
+    - {x: 0.3575856, y: 0.65850395}
+    - {x: 0.37308124, y: 0.6556133}
+    - {x: 0.38901746, y: 0.6556133}
+    - {x: 0.4049537, y: 0.6556133}
+    - {x: 0.4208899, y: 0.6556133}
+    - {x: 0.43682614, y: 0.6556133}
+    - {x: 0.4521523, y: 0.6536862}
+    - {x: 0.46778345, y: 0.6527226}
+    - {x: 0.48371968, y: 0.6527226}
+    - {x: 0.4996559, y: 0.6527226}
+    - {x: 0.5155921, y: 0.6527226}
+    - {x: 0.5315283, y: 0.6527226}
+    - {x: 0.5474645, y: 0.6527226}
+    - {x: 0.56282717, y: 0.6509108}
+    - {x: 0.57872695, y: 0.6507956}
+    - {x: 0.57814026, y: 0.6450446}
+    - {x: 0.56520224, y: 0.6369347}
+    - {x: 0.55177206, y: 0.6284481}
+    - {x: 0.53911144, y: 0.61884654}
+    - {x: 0.52726996, y: 0.60829604}
+    - {x: 0.51549375, y: 0.597562}
+    - {x: 0.50495744, y: 0.58599377}
+    - {x: 0.49290082, y: 0.5758541}
+    - {x: 0.48177105, y: 0.5647391}
+    - {x: 0.46912563, y: 0.5551756}
+    - {x: 0.45817629, y: 0.54428256}
+    - {x: 0.4475641, y: 0.53267974}
+    - {x: 0.43942595, y: 0.51929986}
+    - {x: 0.4315071, y: 0.5062402}
+    - {x: 0.4218891, y: 0.49403143}
+    - {x: 0.41299498, y: 0.48236236}
+    - {x: 0.40246958, y: 0.4713605}
+    - {x: 0.39318916, y: 0.45908988}
+    - {x: 0.38285846, y: 0.4476636}
+    - {x: 0.37401798, y: 0.43512547}
+    - {x: 0.36688352, y: 0.42202947}
+    - {x: 0.3582212, y: 0.4103553}
+    - {x: 0.3487987, y: 0.39890745}
+    - {x: 0.33970568, y: 0.38769147}
+    - {x: 0.33071876, y: 0.37570867}
+    - {x: 0.32335135, y: 0.3628753}
+    - {x: 0.33717927, y: 0.360767}
+    - {x: 0.35304803, y: 0.35980347}
+    - {x: 0.36898425, y: 0.35980347}
+    - {x: 0.3848649, y: 0.3588526}
+    - {x: 0.40074408, y: 0.35787636}
+    - {x: 0.4166803, y: 0.35787636}
+    - {x: 0.43261653, y: 0.35787636}
+    - {x: 0.44855276, y: 0.35787636}
+    - {x: 0.46447763, y: 0.3575208}
+    - {x: 0.48012134, y: 0.35506144}
+    - {x: 0.49590427, y: 0.3540222}
+    - {x: 0.5117982, y: 0.35305858}
+    - {x: 0.5277344, y: 0.35305858}
+    - {x: 0.5432688, y: 0.35033417}
+    - {x: 0.5591805, y: 0.350168}
+    - {x: 0.5746471, y: 0.34824082}
+    - {x: 0.5905833, y: 0.34824082}
+    - {x: 0.6065195, y: 0.34824082}
+    - {x: 0.6223883, y: 0.3472773}
+    - {x: 0.6383245, y: 0.3472773}
+    - {x: 0.65397733, y: 0.34561807}
+    - {x: 0.6695387, y: 0.34342307}
+    - {x: 0.6684324, y: 0.34149602}
+    strokes: []
