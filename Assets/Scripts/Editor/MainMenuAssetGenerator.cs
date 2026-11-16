@@ -26,6 +26,19 @@ public static class MainMenuAssetGenerator
         }
         Save(Render(32, 32, 3, 3f, new List<List<Vector2>> { circle }, null), "rune_air");
 
+        // Extra runes for the pause-menu spellbook.
+        var spiral = new List<Vector2>();
+        for (int i = 0; i < 48; i++)
+        {
+            float t = i / 47f;
+            float a = t * Mathf.PI * 3.8f;
+            float r = Mathf.Lerp(0.05f, 0.40f, t) * 32f;
+            spiral.Add(V(16 + Mathf.Cos(a) * r, 16 + Mathf.Sin(a) * r));
+        }
+        Save(Render(32, 32, 3, 3f, new List<List<Vector2>> { spiral }, null), "rune_air_spiral");
+        Save(Render(32, 32, 3, 3f, new List<List<Vector2>> { new() { V(19, 3), V(8, 18), V(16, 18), V(13, 29), V(24, 13), V(16, 13), V(19, 3), V(8, 18) } }, null), "rune_lightning");
+        Save(Render(32, 32, 3, 3f, new List<List<Vector2>> { circle }, new List<(Vector2, float)> { (V(16, 16), 3.5f) }), "rune_darkness");
+
         // Dotted wavy path: stroke-dasharray "1 10" with round caps = 4px dots every 11 units, plus end dot r=7.
         var path = new List<Vector2>();
         Cubic(path, V(8, 40), V(40, 8), V(70, 8), V(100, 36));
