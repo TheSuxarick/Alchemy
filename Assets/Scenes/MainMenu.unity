@@ -2970,7 +2970,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: WORKING TITLE
+  m_text: 'RuneSpell
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b0e34b53711c73240aa3829c47c69046, type: 2}
   m_sharedMaterial: {fileID: 807651792673127550, guid: b0e34b53711c73240aa3829c47c69046, type: 2}

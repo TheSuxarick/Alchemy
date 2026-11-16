@@ -116,3 +116,5 @@ InitTestScene*.unity*
 # TextMeshPro Essentials: import per-dev via Window > TextMeshPro > Import TMP Essential Resources
 /Assets/TextMesh Pro/
 /Assets/TextMesh Pro.meta
+
+.vsconfig
