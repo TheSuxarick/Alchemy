@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Alchemy.Audio;
 using Alchemy.Gameplay;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -168,6 +169,8 @@ namespace Alchemy.SpellDrawing
 
             Time.timeScale = slowTimeScale;
             Time.fixedDeltaTime = 0.02f * Time.timeScale;
+            AudioManager.Instance.SetTimeSlowDuck(true);
+            AudioManager.Instance.PlaySfx("rune_timeslow_enter", 0.7f, 0.04f);
         }
 
         private void ExitTimeSlowMode()
@@ -179,12 +182,14 @@ namespace Alchemy.SpellDrawing
             _liveMatchResult = null;
             Time.timeScale = 1f;
             Time.fixedDeltaTime = 0.02f;
+            AudioManager.Instance.SetTimeSlowDuck(false);
         }
 
         private void OnDisable()
         {
             Time.timeScale = 1f;
             Time.fixedDeltaTime = 0.02f;
+            AudioManager.Instance.SetTimeSlowDuck(false);
         }
 
         private void BeginStroke(Vector2 guiPos)
@@ -197,6 +202,7 @@ namespace Alchemy.SpellDrawing
             _isDrawingStroke = true;
             _currentStrokePoints.Clear();
             _currentStrokePoints.Add(guiPos);
+            AudioManager.Instance.PlaySfx("rune_stroke", 0.55f, 0.08f);
             UpdateLiveMatch();
         }
 
@@ -260,6 +266,7 @@ namespace Alchemy.SpellDrawing
                     $"+{remainingCharges} {activeSpell.displayName} ({match.boostMultiplier:F1}x)",
                     activeSpell.spellColor,
                     1.2f);
+                AudioManager.Instance.PlaySfx("rune_success", 0.85f, 0.03f);
             }
             else
             {
@@ -267,6 +274,7 @@ namespace Alchemy.SpellDrawing
                     "Fizzle!",
                     new Color(1f, 0.35f, 0.35f),
                     1.0f);
+                AudioManager.Instance.PlaySfx("rune_fizzle", 0.75f, 0.05f);
             }
         }
 
@@ -291,10 +299,20 @@ namespace Alchemy.SpellDrawing
             if (activeSpell == null || remainingCharges <= 0)
             {
                 ShowBanner("0 Charges!", new Color(1f, 0.75f, 0.3f), 1.0f);
+                AudioManager.Instance.PlaySfx("wand_empty", 0.7f, 0.05f);
                 return;
             }
 
             remainingCharges--;
+
+            if (activeSpell.castClip != null)
+            {
+                AudioManager.Instance.PlaySfx(activeSpell.castClip, 0.85f, 0.07f);
+            }
+            else if (!string.IsNullOrEmpty(activeSpell.spellId))
+            {
+                AudioManager.Instance.PlaySfx($"spell_{activeSpell.spellId.Trim().ToLowerInvariant()}_cast", 0.85f, 0.07f);
+            }
 
             if (_player == null)
             {

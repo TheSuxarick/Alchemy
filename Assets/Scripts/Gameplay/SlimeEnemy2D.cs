@@ -1,3 +1,4 @@
+using Alchemy.Audio;
 using Alchemy.SpellDrawing;
 using UnityEngine;
 
@@ -295,8 +296,17 @@ namespace Alchemy.Gameplay
                 if (shatterOnDeath && _sr != null)
                 {
                     PixelShatterVfx.Spawn(_sr, hitDirection.normalized, isElectric);
+                    AudioManager.Instance.PlaySfx("slime_shatter", 0.85f, 0.08f);
+                }
+                else
+                {
+                    AudioManager.Instance.PlaySfx("slime_death", 0.8f, 0.08f);
                 }
                 Destroy(gameObject);
+            }
+            else
+            {
+                AudioManager.Instance.PlaySfx("slime_hit", 0.7f, 0.1f);
             }
         }
     }

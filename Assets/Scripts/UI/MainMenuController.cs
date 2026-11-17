@@ -1,3 +1,4 @@
+using Alchemy.Audio;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,12 +11,27 @@ public class MainMenuController : MonoBehaviour
     [Tooltip("Leave empty until an options scene exists.")]
     [SerializeField] private string optionsScene = "";
 
-    public void Play() => Load(playScene);
-    public void SpellPractice() => Load(spellPracticeScene);
-    public void Options() => Load(optionsScene);
+    public void Play()
+    {
+        AudioManager.Instance.PlayUi("ui_click");
+        Load(playScene);
+    }
+
+    public void SpellPractice()
+    {
+        AudioManager.Instance.PlayUi("ui_click");
+        Load(spellPracticeScene);
+    }
+
+    public void Options()
+    {
+        AudioManager.Instance.PlayUi("ui_click");
+        Load(optionsScene);
+    }
 
     public void Quit()
     {
+        AudioManager.Instance.PlayUi("ui_click");
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #else

@@ -99,6 +99,10 @@ namespace Alchemy.SpellDrawing
         public float projectileFps = 14f;
         public bool tintProjectileBySpellColor = false;
 
+        [Header("Audio")]
+        public AudioClip castClip;
+        public AudioClip impactClip;
+
         [Header("Alchemy Recipe (Optional Parents)")]
         public SpellData ingredientA;
         public SpellData ingredientB;

@@ -1,3 +1,4 @@
+using Alchemy.Audio;
 using Alchemy.SpellDrawing;
 using UnityEngine;
 
@@ -197,6 +198,15 @@ namespace Alchemy.Gameplay
         {
             if (_hasImpacted) return;
             _hasImpacted = true;
+
+            if (_sourceSpell != null && _sourceSpell.impactClip != null)
+            {
+                AudioManager.Instance.PlaySfx(_sourceSpell.impactClip, 0.85f, 0.08f);
+            }
+            else if (_sourceSpell != null && !string.IsNullOrEmpty(_sourceSpell.spellId))
+            {
+                AudioManager.Instance.PlaySfx($"spell_{_sourceSpell.spellId.Trim().ToLowerInvariant()}_impact", 0.85f, 0.08f);
+            }
 
             if (_impactFrames != null && _impactFrames.Length > 0)
             {

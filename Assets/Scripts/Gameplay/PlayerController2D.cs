@@ -1,3 +1,4 @@
+using Alchemy.Audio;
 using Alchemy.SpellDrawing;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -42,6 +43,7 @@ namespace Alchemy.Gameplay
         private float _dashCooldownRemaining;
         private float _ghostSpawnTimer;
         private float _walkBobTimer;
+        private float _footstepTimer;
         private float _invincibilityTimer;
         private Vector2 _damageKnockbackVel;
 
@@ -175,6 +177,19 @@ namespace Alchemy.Gameplay
                     SpawnDashGhost();
                 }
             }
+            else if (_moveInput.sqrMagnitude > 0.04f)
+            {
+                _footstepTimer -= dt;
+                if (_footstepTimer <= 0f)
+                {
+                    _footstepTimer = 0.28f;
+                    AudioManager.Instance.PlaySfx("player_step", 0.38f, 0.12f);
+                }
+            }
+            else
+            {
+                _footstepTimer = 0.05f;
+            }
 
             UpdateVisualsAndWandAim(dt);
         }
@@ -211,6 +226,11 @@ namespace Alchemy.Gameplay
                 transform.position = Vector3.zero;
                 _invincibilityTimer = 1.5f;
                 SpawnHeadPopup("Respawned!", new Color(0.55f, 1f, 0.65f), 15);
+                AudioManager.Instance.PlaySfx("player_respawn", 0.85f, 0.02f);
+            }
+            else
+            {
+                AudioManager.Instance.PlaySfx("player_hurt", 0.85f, 0.06f);
             }
             return true;
         }
@@ -242,6 +262,7 @@ namespace Alchemy.Gameplay
             _dashCooldownRemaining = dashCooldown;
             _ghostSpawnTimer = 0f;
             SpawnDashGhost();
+            AudioManager.Instance.PlaySfx("player_dash", 0.78f, 0.08f);
         }
 
         private void SpawnDashGhost()

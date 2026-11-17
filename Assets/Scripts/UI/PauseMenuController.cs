@@ -1,4 +1,5 @@
 using System;
+using Alchemy.Audio;
 using Alchemy.SpellDrawing;
 using TMPro;
 using UnityEngine;
@@ -94,8 +95,9 @@ public class PauseMenuController : MonoBehaviour
         _paused = true;
         root.SetActive(true);
         RefreshLoadedCard();
-        ShowMain();
+        SetPage(mainPage);
         ApplyTime(true);
+        AudioManager.Instance.PlayUi("ui_pause");
     }
 
     public void Resume()
@@ -103,13 +105,24 @@ public class PauseMenuController : MonoBehaviour
         _paused = false;
         root.SetActive(false);
         ApplyTime(false);
+        AudioManager.Instance.PlayUi("ui_resume");
     }
 
-    public void ShowMain() => SetPage(mainPage);
-    public void ShowOptions() => SetPage(optionsPage);
+    public void ShowMain()
+    {
+        AudioManager.Instance.PlayUi("ui_click");
+        SetPage(mainPage);
+    }
+
+    public void ShowOptions()
+    {
+        AudioManager.Instance.PlayUi("ui_click");
+        SetPage(optionsPage);
+    }
 
     public void AskMainMenu()
     {
+        AudioManager.Instance.PlayUi("ui_click");
         _confirmingQuit = false;
         SetConfirmText("LEAVE?", "Return to the Main Menu?", "Progress since your last save\nwill be lost.", "Same page for Quit");
         SetPage(confirmPage);
@@ -117,6 +130,7 @@ public class PauseMenuController : MonoBehaviour
 
     public void AskQuit()
     {
+        AudioManager.Instance.PlayUi("ui_click");
         _confirmingQuit = true;
         SetConfirmText("QUIT?", "Close the game?", "Progress since your last save\nwill be lost.", "Same page for Main Menu");
         SetPage(confirmPage);
@@ -124,6 +138,7 @@ public class PauseMenuController : MonoBehaviour
 
     public void ConfirmLeave()
     {
+        AudioManager.Instance.PlayUi("ui_click");
         ApplyTime(false);
         _paused = false;
         if (_confirmingQuit)
@@ -190,7 +205,7 @@ public class PauseMenuController : MonoBehaviour
 
     private void OnVolumeChanged(float v)
     {
-        AudioListener.volume = v;
+        AudioManager.Instance.SetMasterVolume(v);
         UpdateVolumeLabel(v);
     }
 

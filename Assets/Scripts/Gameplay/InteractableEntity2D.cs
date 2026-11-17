@@ -1,3 +1,4 @@
+using Alchemy.Audio;
 using Alchemy.SpellDrawing;
 using UnityEngine;
 
@@ -95,6 +96,7 @@ namespace Alchemy.Gameplay
                     _isBurning = true;
                     _burnTimeRemaining = Mathf.Max(_burnTimeRemaining, Mathf.Max(3.5f, spell.burnDuration) * boost);
                     SeedInitialFirePixels();
+                    AudioManager.Instance.PlaySfx("env_ignite", 0.7f, 0.08f);
                 }
             }
 
@@ -109,10 +111,16 @@ namespace Alchemy.Gameplay
 
                 if (durability <= 0f)
                 {
+                    AudioManager.Instance.PlaySfx("env_rock_crack", 0.85f, 0.08f);
                     PixelShatterVfx.Spawn(_sr, normDir, isLightning);
                     Destroy(gameObject);
                     return;
                 }
+                AudioManager.Instance.PlaySfx("env_rock_crack", 0.55f, 0.1f);
+            }
+            else if ((attrs & SpellAttributeFlags.AirKnockback) != 0)
+            {
+                AudioManager.Instance.PlaySfx("env_bush_rustle", 0.65f, 0.1f);
             }
 
             spell.OnCustomHit(gameObject, normDir, boost);
