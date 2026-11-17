@@ -163,7 +163,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -177,12 +177,14 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 24
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
+  spriteTessellationMethod: 0
   spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -201,7 +203,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -239,947 +241,353 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sprite-sheet_0
+      name: pvfx_shockwave_ring_000
       rect:
         serializedVersion: 2
-        x: 20
-        y: 36
-        width: 80
-        height: 66
+        x: 21
+        y: 53
+        width: 78
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a776f671eda5fdb60800000000000000
-      internalID: 7773031391787181946
+      spriteID: c8fe77ac6888f4d12aea41c9462c2fbb
+      internalID: 326220756
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet_1
+      name: pvfx_shockwave_ring_001
       rect:
         serializedVersion: 2
-        x: 158
-        y: 57
-        width: 44
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 75863d130a5033ce0800000000000000
-      internalID: -1426790471357470633
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet_2
-      rect:
-        serializedVersion: 2
-        x: 369
-        y: 6
-        width: 95
-        height: 82
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3187c11e476283dd0800000000000000
-      internalID: -2506210909196879853
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet_3
-      rect:
-        serializedVersion: 2
-        x: 492
-        y: 10
-        width: 93
-        height: 80
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cc098d84c8ce36480800000000000000
-      internalID: -8907015550746980148
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet_4
-      rect:
-        serializedVersion: 2
-        x: 611
-        y: 36
-        width: 98
-        height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2d840a2d2452e25d0800000000000000
-      internalID: -3085487725770422062
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet_5
-      rect:
-        serializedVersion: 2
-        x: 728
-        y: 60
-        width: 33
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7700d249342c4b990800000000000000
-      internalID: -7371053094594084745
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet_6
-      rect:
-        serializedVersion: 2
-        x: 747
-        y: 84
-        width: 37
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c5377c8784a3f75d0800000000000000
-      internalID: -3062665138650254500
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet_7
-      rect:
-        serializedVersion: 2
-        x: 786
-        y: 80
-        width: 35
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2f6224db30a7a45e0800000000000000
-      internalID: -1924591734268745998
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet_8
-      rect:
-        serializedVersion: 2
-        x: 847
-        y: 65
-        width: 19
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 108f6aeb552bec820800000000000000
-      internalID: 2940483688060090369
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet_9
-      rect:
-        serializedVersion: 2
-        x: 873
-        y: 85
-        width: 18
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 147542117b6893930800000000000000
-      internalID: 4123475054659131201
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet_10
-      rect:
-        serializedVersion: 2
-        x: 890
-        y: 87
-        width: 8
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c6cd8aa4528ad4a90800000000000000
-      internalID: -7328016140542092180
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet_11
-      rect:
-        serializedVersion: 2
-        x: 908
-        y: 81
-        width: 35
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 38c64a6e1bd44f700800000000000000
-      internalID: 573168479056981123
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet_12
-      rect:
-        serializedVersion: 2
-        x: 249
-        y: 6
-        width: 96
-        height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 256ace7f17a5283e0800000000000000
-      internalID: -2052979034590239150
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet_13
-      rect:
-        serializedVersion: 2
-        x: 761
+        x: 159
         y: 58
-        width: 17
-        height: 11
+        width: 42
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d5c9369bf3e3da7f0800000000000000
-      internalID: -599754731956233123
+      spriteID: 35f11d1fd507244dc94b094f76006e4c
+      internalID: 238044161
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet_14
+      name: pvfx_shockwave_ring_002
       rect:
         serializedVersion: 2
-        x: 770
-        y: 67
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1d62f194a6be51470800000000000000
-      internalID: 8364850724636403409
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet_15
-      rect:
-        serializedVersion: 2
-        x: 779
-        y: 57
-        width: 53
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 51606bf2f2506b3a0800000000000000
-      internalID: -6650122099543898603
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet_16
-      rect:
-        serializedVersion: 2
-        x: 858
-        y: 60
-        width: 21
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0f2cb83338e444bb0800000000000000
-      internalID: -4952747364788223248
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet_17
-      rect:
-        serializedVersion: 2
-        x: 880
-        y: 58
-        width: 18
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 25bc142e085dcb0c0800000000000000
-      internalID: -4558533973277291694
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet_18
-      rect:
-        serializedVersion: 2
-        x: 890
-        y: 67
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: aa1e344295cbba200800000000000000
-      internalID: 192454500139917738
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet_19
-      rect:
-        serializedVersion: 2
-        x: 899
-        y: 57
-        width: 55
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 040ca476312b5a8c0800000000000000
-      internalID: -3988586098559631296
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet_20
-      rect:
-        serializedVersion: 2
-        x: 5
-        y: 13
-        width: 19
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 50d901b775af3af30800000000000000
-      internalID: 4585784099227081989
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet_21
-      rect:
-        serializedVersion: 2
-        x: 68
-        y: 30
-        width: 34
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 87ec3badaa1b6cd60800000000000000
-      internalID: 7910205142894628472
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet_22
-      rect:
-        serializedVersion: 2
-        x: 126
-        y: 14
-        width: 16
+        x: 268
+        y: 63
+        width: 65
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: becaea156d51054b0800000000000000
-      internalID: -5453835138508083989
+      spriteID: 3fb40d0675f9c46eab23409c1399aa49
+      internalID: 187591875
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet_23
+      name: pvfx_shockwave_ring_003
       rect:
         serializedVersion: 2
-        x: 180
-        y: 7
-        width: 55
-        height: 31
+        x: 380
+        y: 60
+        width: 80
+        height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: da39a3520f2758210800000000000000
-      internalID: 1334599240327533485
+      spriteID: 8105e560b4f514d7299bc8dc5d67115b
+      internalID: 1960578132
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet_24
+      name: pvfx_shockwave_ring_004
       rect:
         serializedVersion: 2
-        x: 300
-        y: 17
-        width: 31
-        height: 23
+        x: 495
+        y: 59
+        width: 89
+        height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c1f6c04d7b71504a0800000000000000
-      internalID: -6627865198301778148
+      spriteID: eb3172682677744249b22e0453d70236
+      internalID: 2085288917
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet_25
+      name: pvfx_shockwave_ring_005
       rect:
         serializedVersion: 2
-        x: 420
-        y: 17
-        width: 29
-        height: 24
+        x: 612
+        y: 58
+        width: 96
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b7541f9e15ce06cf0800000000000000
-      internalID: -260948941826079365
+      spriteID: 371b9e31eb1124045b42837ab5c7adb0
+      internalID: 1406400059
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet_26
+      name: pvfx_shockwave_ring_006
       rect:
         serializedVersion: 2
-        x: 17
-        y: 7
-        width: 21
-        height: 12
+        x: 729
+        y: 58
+        width: 102
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5e496406a4e77d660800000000000000
-      internalID: 7410530569769358565
+      spriteID: e52cae607a5e8456898f9c2cc36f0977
+      internalID: -253171251
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet_27
+      name: pvfx_shockwave_ring_007
       rect:
         serializedVersion: 2
-        x: 40
-        y: 5
-        width: 17
-        height: 12
+        x: 848
+        y: 58
+        width: 105
+        height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7d21fa2be3b8ef7f0800000000000000
-      internalID: -576870600854793513
+      spriteID: 86d8c4b874c3f47f8a7c344f9ea6705f
+      internalID: 870612102
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet_28
+      name: pvfx_shockwave_ring_008
       rect:
         serializedVersion: 2
-        x: 50
-        y: 15
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 24ca86f30cc012db0800000000000000
-      internalID: -4818556106472641470
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet_29
-      rect:
-        serializedVersion: 2
-        x: 60
-        y: 17
-        width: 14
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 023b9e93dee753cd0800000000000000
-      internalID: -2579015654255774944
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet_30
-      rect:
-        serializedVersion: 2
-        x: 60
-        y: 5
-        width: 18
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d3f7504d323f3dea0800000000000000
-      internalID: -5849064155817607363
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet_31
-      rect:
-        serializedVersion: 2
-        x: 76
-        y: 8
-        width: 26
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2407a574072a3cc90800000000000000
-      internalID: -7150693180217069502
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet_32
-      rect:
-        serializedVersion: 2
-        x: 97
-        y: 17
-        width: 12
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6822a03b2864a2770800000000000000
-      internalID: 8586753166698750598
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet_33
-      rect:
-        serializedVersion: 2
-        x: 105
-        y: 14
-        width: 11
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b1bdc16e4f615e5e0800000000000000
-      internalID: -1881072028268831973
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet_34
-      rect:
-        serializedVersion: 2
-        x: 139
-        y: 8
-        width: 18
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 42b1c1af2d28f1e20800000000000000
-      internalID: 3323518892673604388
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet_35
-      rect:
-        serializedVersion: 2
-        x: 160
+        x: 6
         y: 6
-        width: 16
-        height: 11
+        width: 109
+        height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a9f7931904f1d7c30800000000000000
-      internalID: 4358674376539340698
+      spriteID: 8574b5d2c70074f44bd3473e7166f985
+      internalID: -1196846953
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet_36
+      name: pvfx_shockwave_ring_009
       rect:
         serializedVersion: 2
-        x: 170
-        y: 15
-        width: 11
-        height: 11
+        x: 127
+        y: 7
+        width: 107
+        height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ec19071d18bb8d4b0800000000000000
-      internalID: -5415372385674030642
+      spriteID: 54d90aad9f7194ad7a7e260bb0fddf32
+      internalID: -564490568
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet_37
+      name: pvfx_shockwave_ring_010
       rect:
         serializedVersion: 2
-        x: 180
-        y: 6
-        width: 18
-        height: 12
+        x: 250
+        y: 7
+        width: 94
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0662e4b45befcbb80800000000000000
-      internalID: -8377541152210016672
+      spriteID: 96fe4847273e24c53ac0d4ab3b2716d5
+      internalID: 1001891531
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet_38
+      name: pvfx_shockwave_ring_011
       rect:
         serializedVersion: 2
-        x: 290
-        y: 15
-        width: 11
-        height: 11
+        x: 370
+        y: 7
+        width: 93
+        height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1b39042dd6a9d4280800000000000000
-      internalID: -9057413479102639183
+      spriteID: f4d4e8785e09c455cabb6ea3b69cacc2
+      internalID: -371951887
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet_39
+      name: pvfx_shockwave_ring_012
       rect:
         serializedVersion: 2
-        x: 410
-        y: 17
-        width: 11
-        height: 9
+        x: 493
+        y: 11
+        width: 90
+        height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 175a210387900c6f0800000000000000
-      internalID: -666522333043579535
+      spriteID: 2f6ef03811d964c84b71c0b52c6f3cfc
+      internalID: 353871341
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet_40
+      name: pvfx_shockwave_ring_013
       rect:
         serializedVersion: 2
-        x: 532
-        y: 18
-        width: 9
-        height: 8
+        x: 622
+        y: 13
+        width: 68
+        height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e1c93954e8852a7a0800000000000000
-      internalID: -6367429555072558050
+      spriteID: b7fc0f337d9064672b00a04553ffbf1d
+      internalID: 1429456775
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet_41
+      name: pvfx_shockwave_ring_014
       rect:
         serializedVersion: 2
-        x: 540
-        y: 17
-        width: 13
-        height: 9
+        x: 720
+        y: 0
+        width: 120
+        height: 52
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e145dd80ae1578cd0800000000000000
-      internalID: -2555984197896547298
+      spriteID: 0054f087962c44ed4a63dc15fc1e3cf0
+      internalID: 1649247218
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet_42
+      name: pvfx_shockwave_ring_015
       rect:
         serializedVersion: 2
-        x: 654
-        y: 12
-        width: 37
-        height: 14
+        x: 840
+        y: 0
+        width: 120
+        height: 52
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9332b1ed5b8db2930800000000000000
-      internalID: 4119624559787451193
+      spriteID: cca60a24f78cc4bcdaa194f178be31d8
+      internalID: -379106459
       vertices: []
       indices: 
       edges: []
@@ -1188,7 +596,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: fa55c715d94f04c77bd0a7502f9f8c0a
     internalID: 0
     vertices: []
     indices: 
@@ -1198,6 +606,22 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+      pvfx_shockwave_ring_000: 326220756
+      pvfx_shockwave_ring_001: 238044161
+      pvfx_shockwave_ring_002: 187591875
+      pvfx_shockwave_ring_003: 1960578132
+      pvfx_shockwave_ring_004: 2085288917
+      pvfx_shockwave_ring_005: 1406400059
+      pvfx_shockwave_ring_006: -253171251
+      pvfx_shockwave_ring_007: 870612102
+      pvfx_shockwave_ring_008: -1196846953
+      pvfx_shockwave_ring_009: -564490568
+      pvfx_shockwave_ring_010: 1001891531
+      pvfx_shockwave_ring_011: -371951887
+      pvfx_shockwave_ring_012: 353871341
+      pvfx_shockwave_ring_013: 1429456775
+      pvfx_shockwave_ring_014: 1649247218
+      pvfx_shockwave_ring_015: -379106459
       sprite-sheet_0: 7773031391787181946
       sprite-sheet_1: -1426790471357470633
       sprite-sheet_10: -7328016140542092180

@@ -94,7 +94,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -108,12 +108,14 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 24
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
+  spriteTessellationMethod: 0
   spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -132,7 +134,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -170,441 +172,309 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sprite-sheet_0
+      name: pvfx_boss_enrage_000
       rect:
         serializedVersion: 2
-        x: 5
-        y: 50
-        width: 44
+        x: 8
+        y: 56
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29760532012c14d1c9bbe21d7b170e3b
+      internalID: 2099072353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pvfx_boss_enrage_001
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 56
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc08a6d7795a44c4badce3ce0983aec7
+      internalID: -1094134669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pvfx_boss_enrage_002
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 56
+        width: 40
         height: 51
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a776f671eda5fdb60800000000000000
-      internalID: 7773031391787181946
+      spriteID: b8fb51d9468e94dc0ad94d6366b6326b
+      internalID: -1608946843
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet_1
+      name: pvfx_boss_enrage_003
       rect:
         serializedVersion: 2
-        x: 62
-        y: 51
-        width: 43
-        height: 52
+        x: 176
+        y: 56
+        width: 40
+        height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 75863d130a5033ce0800000000000000
-      internalID: -1426790471357470633
+      spriteID: 80ed619430f0646d7917e27fdf3c8daa
+      internalID: -323035419
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet_2
+      name: pvfx_boss_enrage_004
       rect:
         serializedVersion: 2
-        x: 119
-        y: 39
-        width: 42
-        height: 69
+        x: 228
+        y: 56
+        width: 48
+        height: 56
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3187c11e476283dd0800000000000000
-      internalID: -2506210909196879853
+      spriteID: ce4a9c2c768724e12995e624598b852e
+      internalID: 334094716
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet_3
+      name: pvfx_boss_enrage_005
       rect:
         serializedVersion: 2
-        x: 175
-        y: 50
-        width: 42
-        height: 61
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cc098d84c8ce36480800000000000000
-      internalID: -8907015550746980148
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet_4
-      rect:
-        serializedVersion: 2
-        x: 227
-        y: 52
-        width: 50
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2d840a2d2452e25d0800000000000000
-      internalID: -3085487725770422062
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet_5
-      rect:
-        serializedVersion: 2
-        x: 230
-        y: 91
-        width: 7
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7700d249342c4b990800000000000000
-      internalID: -7371053094594084745
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet_6
-      rect:
-        serializedVersion: 2
-        x: 286
-        y: 96
-        width: 7
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c5377c8784a3f75d0800000000000000
-      internalID: -3062665138650254500
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet_7
-      rect:
-        serializedVersion: 2
-        x: 341
-        y: 100
-        width: 7
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2f6224db30a7a45e0800000000000000
-      internalID: -1924591734268745998
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet_8
-      rect:
-        serializedVersion: 2
-        x: 398
-        y: 55
-        width: 45
-        height: 53
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 108f6aeb552bec820800000000000000
-      internalID: 2940483688060090369
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet_9
-      rect:
-        serializedVersion: 2
-        x: 282
-        y: 53
-        width: 53
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 147542117b6893930800000000000000
-      internalID: 4123475054659131201
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet_10
-      rect:
-        serializedVersion: 2
-        x: 339
-        y: 55
+        x: 283
+        y: 56
         width: 51
-        height: 40
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c6cd8aa4528ad4a90800000000000000
-      internalID: -7328016140542092180
+      spriteID: c201b9e6a5a7848b3b7588c91b5da12b
+      internalID: -544493624
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet_11
+      name: pvfx_boss_enrage_006
       rect:
         serializedVersion: 2
-        x: 7
+        x: 340
+        y: 56
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc1cbf50eb35349d3ae4f68d651e01f6
+      internalID: -1421831900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pvfx_boss_enrage_007
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 56
+        width: 43
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4902009c1f0b4072a24c55633cad2e2
+      internalID: 1086772169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pvfx_boss_enrage_008
+      rect:
+        serializedVersion: 2
+        x: 6
         y: 0
         width: 42
-        height: 38
+        height: 53
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 38c64a6e1bd44f700800000000000000
-      internalID: 573168479056981123
+      spriteID: 718d3d8352c4b42ec854a035e2bec44f
+      internalID: -122662564
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet_12
-      rect:
-        serializedVersion: 2
-        x: 12
-        y: 30
-        width: 28
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 256ace7f17a5283e0800000000000000
-      internalID: -2052979034590239150
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet_13
+      name: pvfx_boss_enrage_009
       rect:
         serializedVersion: 2
         x: 63
         y: 0
-        width: 42
-        height: 38
+        width: 41
+        height: 53
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d5c9369bf3e3da7f0800000000000000
-      internalID: -599754731956233123
+      spriteID: f262405176a5e4035a3946cdda6daff1
+      internalID: 1110077424
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet_14
+      name: pvfx_boss_enrage_010
       rect:
         serializedVersion: 2
-        x: 69
-        y: 34
-        width: 27
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1d62f194a6be51470800000000000000
-      internalID: 8364850724636403409
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet_15
-      rect:
-        serializedVersion: 2
-        x: 119
+        x: 120
         y: 0
-        width: 42
-        height: 42
+        width: 40
+        height: 52
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 51606bf2f2506b3a0800000000000000
-      internalID: -6650122099543898603
+      spriteID: 6e4e2d2fee565496ca2f42346d64ea8c
+      internalID: -1890941654
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet_16
+      name: pvfx_boss_enrage_011
       rect:
         serializedVersion: 2
-        x: 175
+        x: 176
         y: 0
-        width: 42
-        height: 45
+        width: 40
+        height: 53
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0f2cb83338e444bb0800000000000000
-      internalID: -4952747364788223248
+      spriteID: e8065b89e852e41d9b96c7bb455a6589
+      internalID: -412954951
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet_17
+      name: pvfx_boss_enrage_012
       rect:
         serializedVersion: 2
-        x: 231
+        x: 232
         y: 0
-        width: 42
-        height: 42
+        width: 40
+        height: 55
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 25bc142e085dcb0c0800000000000000
-      internalID: -4558533973277291694
+      spriteID: 8a1d5e07c3e264293a067d0034e86d30
+      internalID: 480988440
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet_18
+      name: pvfx_boss_enrage_013
       rect:
         serializedVersion: 2
-        x: 287
+        x: 288
         y: 0
-        width: 42
-        height: 42
+        width: 40
+        height: 55
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: aa1e344295cbba200800000000000000
-      internalID: 192454500139917738
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet_19
-      rect:
-        serializedVersion: 2
-        x: 319
-        y: 37
-        width: 7
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 040ca476312b5a8c0800000000000000
-      internalID: -3988586098559631296
+      spriteID: a9cb8c6ecda1d44458289caf98311803
+      internalID: 151112094
       vertices: []
       indices: 
       edges: []
@@ -613,7 +483,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 8162f451cb10b4eb9a2b374a7e92540e
     internalID: 0
     vertices: []
     indices: 
@@ -623,6 +493,20 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+      pvfx_boss_enrage_000: 2099072353
+      pvfx_boss_enrage_001: -1094134669
+      pvfx_boss_enrage_002: -1608946843
+      pvfx_boss_enrage_003: -323035419
+      pvfx_boss_enrage_004: 334094716
+      pvfx_boss_enrage_005: -544493624
+      pvfx_boss_enrage_006: -1421831900
+      pvfx_boss_enrage_007: 1086772169
+      pvfx_boss_enrage_008: -122662564
+      pvfx_boss_enrage_009: 1110077424
+      pvfx_boss_enrage_010: -1890941654
+      pvfx_boss_enrage_011: -412954951
+      pvfx_boss_enrage_012: 480988440
+      pvfx_boss_enrage_013: 151112094
       sprite-sheet_0: 7773031391787181946
       sprite-sheet_1: -1426790471357470633
       sprite-sheet_10: -7328016140542092180

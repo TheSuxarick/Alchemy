@@ -12,7 +12,13 @@ namespace Alchemy.Gameplay
         public int rockCount = 18;
         public int decorCount = 45;
         public int slimeCount = 8;
+        public int mageCount = 4;
+        public bool spawnMinotaurBoss = true;
+        public bool useWaveSystem = true;
         public int randomSeed = 42;
+
+        private static readonly Vector2 BossGladeCenter = new Vector2(16.5f, 0f);
+        private const float BossGladeRadius = 5.5f;
 
         private Sprite _worldGroundSprite;
         private Sprite _fallbackTreeSprite;
@@ -132,6 +138,14 @@ namespace Alchemy.Gameplay
                         c = Mathf.Abs(worldY) > 0.92f ? pathEdge : pathColor;
                     }
 
+                    float distToBossGlade = Vector2.Distance(new Vector2(worldX, worldY), BossGladeCenter);
+                    if (distToBossGlade <= BossGladeRadius && distToRiver >= 2.1f)
+                    {
+                        c = distToBossGlade > BossGladeRadius - 0.55f
+                            ? new Color(0.56f, 0.54f, 0.44f, 1f)
+                            : Color.Lerp(c, new Color(0.64f, 0.62f, 0.46f, 1f), 0.45f);
+                    }
+
                     pixels[py * texW + px] = c;
                 }
             }
@@ -162,8 +176,22 @@ namespace Alchemy.Gameplay
                 SpawnProps("Decor", _sproutDecor, null, decorCount, 0.2f, 1.0f, addCollider: false);
             }
 
-            // 3. Spawn animated Slime test enemies
-            SpawnSlimes(slimeCount);
+            // 3. Spawn enemies via infinite WaveManager2D in Play Mode (or static preview)
+            if (useWaveSystem && Application.isPlaying)
+            {
+                var waveMgr = GetComponent<WaveManager2D>();
+                if (waveMgr == null) waveMgr = gameObject.AddComponent<WaveManager2D>();
+                waveMgr.Initialize(mapWidthTiles, mapHeightTiles, BossGladeCenter);
+            }
+            else if (!useWaveSystem)
+            {
+                SpawnSlimes(slimeCount);
+                SpawnElementalMages(mageCount);
+                if (spawnMinotaurBoss)
+                {
+                    SpawnMinotaurBoss();
+                }
+            }
 
             Random.state = prevState;
         }
@@ -188,6 +216,7 @@ namespace Alchemy.Gameplay
                 Vector2 pos = new Vector2(Random.Range(-halfW, halfW), Random.Range(-halfH, halfH));
 
                 if (pos.magnitude < 4.0f || Mathf.Abs(pos.y) < 2.2f) continue;
+                if (Vector2.Distance(pos, BossGladeCenter) < BossGladeRadius + 0.6f) continue;
 
                 float riverCenterX = 9f + Mathf.Sin(pos.y * 0.18f) * 4.5f;
                 if (Mathf.Abs(pos.x - riverCenterX) < 3.0f) continue;
@@ -251,6 +280,7 @@ namespace Alchemy.Gameplay
                 attempts++;
                 Vector2 pos = new Vector2(Random.Range(-halfW, halfW), Random.Range(-halfH, halfH));
                 if (pos.magnitude < 5.5f) continue;
+                if (Vector2.Distance(pos, BossGladeCenter) < BossGladeRadius + 0.8f) continue;
 
                 float riverCenterX = 9f + Mathf.Sin(pos.y * 0.18f) * 4.5f;
                 if (Mathf.Abs(pos.x - riverCenterX) < 3.0f) continue;
@@ -266,6 +296,52 @@ namespace Alchemy.Gameplay
 
                 spawned++;
             }
+        }
+
+        private void SpawnElementalMages(int count)
+        {
+            if (count <= 0) return;
+
+            MageElement[] elements =
+            {
+                MageElement.Fire,
+                MageElement.Lightning,
+                MageElement.Water,
+                MageElement.Darkness
+            };
+
+            int spawned = 0;
+            int attempts = 0;
+            float halfW = mapWidthTiles * 0.5f - 5f;
+            float halfH = mapHeightTiles * 0.5f - 5f;
+
+            while (spawned < count && attempts < count * 16)
+            {
+                attempts++;
+                Vector2 pos = new Vector2(Random.Range(-halfW, halfW), Random.Range(-halfH, halfH));
+                if (pos.magnitude < 6.5f) continue;
+                if (Vector2.Distance(pos, BossGladeCenter) < BossGladeRadius + 1.2f) continue;
+
+                float riverCenterX = 9f + Mathf.Sin(pos.y * 0.18f) * 4.5f;
+                if (Mathf.Abs(pos.x - riverCenterX) < 3.0f) continue;
+
+                MageElement elem = elements[spawned % elements.Length];
+                var mageGo = new GameObject($"Mage_{elem}_{spawned + 1}");
+                mageGo.transform.SetParent(transform, false);
+                mageGo.transform.position = new Vector3(pos.x, pos.y, 0f);
+
+                var mage = mageGo.AddComponent<ElementalMageEnemy2D>();
+                mage.InitializeElement(elem);
+                spawned++;
+            }
+        }
+
+        private void SpawnMinotaurBoss()
+        {
+            var bossGo = new GameObject("MinotaurBoss");
+            bossGo.transform.SetParent(transform, false);
+            bossGo.transform.position = new Vector3(BossGladeCenter.x, BossGladeCenter.y, 0f);
+            bossGo.AddComponent<MinotaurBossEnemy2D>();
         }
 
         private static Sprite CreatePixelTreeSprite()

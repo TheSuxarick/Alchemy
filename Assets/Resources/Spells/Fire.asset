@@ -43,6 +43,8 @@ MonoBehaviour:
   - {fileID: -159021766, guid: 4782cc2929996f54980e6495be6bed0b, type: 3}
   projectileFps: 15
   tintProjectileBySpellColor: 0
+  castClip: {fileID: 8300000, guid: 9608c30f11b1647c4b04ed4df988868c, type: 3}
+  impactClip: {fileID: 8300000, guid: 81a626b5cd2654a07bb1b31892e16219, type: 3}
   ingredientA: {fileID: 0}
   ingredientB: {fileID: 0}
   allowReverseStroke: 1

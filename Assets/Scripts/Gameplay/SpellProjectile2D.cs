@@ -15,6 +15,8 @@ namespace Alchemy.Gameplay
         private float _boostMultiplier = 1f;
         private float _finalScale = 1f;
         private SpellData _sourceSpell;
+        private bool _isEnemyProjectile;
+        private bool _canBeDeflectedByAir;
 
         private SpriteRenderer _sr;
         private Sprite[] _flightFrames;
@@ -52,6 +54,67 @@ namespace Alchemy.Gameplay
             {
                 proj._sourceSpell = spell;
                 proj._boostMultiplier = boostMultiplier;
+            }
+        }
+
+        public static void SpawnEnemyFromSpell(
+            Vector3 spawnPos,
+            Vector2 direction,
+            SpellData spell,
+            float damageOverride = 12f,
+            float speedScale = 0.7f)
+        {
+            if (spell == null) return;
+
+            var proj = Spawn(
+                spawnPos,
+                direction,
+                spell.spellColor,
+                1f,
+                spell.projectileFrames,
+                spell.impactFrames,
+                spell.projectileFps,
+                spell.projectileScale * 0.9f,
+                spell.projectileSpeed * speedScale,
+                spell.projectileLifetime * 1.15f,
+                damageOverride,
+                spell.tintProjectileBySpellColor);
+
+            if (proj != null)
+            {
+                proj._sourceSpell = spell;
+                proj._isEnemyProjectile = true;
+                proj._damage = damageOverride;
+            }
+        }
+
+        public static void SpawnEnemySpore(
+            Vector3 spawnPos,
+            Vector2 direction,
+            Color color,
+            float speed = 6.5f,
+            float damage = 14f,
+            float scale = 0.72f)
+        {
+            var proj = Spawn(
+                spawnPos,
+                direction,
+                color,
+                1f,
+                flightFrames: null,
+                impactFrames: null,
+                fps: 12f,
+                baseScale: scale,
+                baseSpeed: speed,
+                lifetime: 2.4f,
+                baseDamage: damage,
+                tintBySpellColor: true);
+
+            if (proj != null)
+            {
+                proj._isEnemyProjectile = true;
+                proj._canBeDeflectedByAir = true;
+                proj._damage = damage;
             }
         }
 
@@ -178,10 +241,49 @@ namespace Alchemy.Gameplay
         {
             if (_hasImpacted || other == null) return;
 
+            if (_isEnemyProjectile)
+            {
+                if (_canBeDeflectedByAir)
+                {
+                    var otherProj = other.GetComponent<SpellProjectile2D>();
+                    if (otherProj != null && !otherProj._isEnemyProjectile && otherProj._sourceSpell != null &&
+                        (otherProj._sourceSpell.GetEffectiveAttributes() & SpellAttributeFlags.AirKnockback) != 0)
+                    {
+                        AudioManager.Instance.PlaySfx("env_bush_rustle", 0.7f, 0.1f);
+                        TriggerImpactAndDestroy();
+                        return;
+                    }
+                }
+
+                var player = other.GetComponent<PlayerController2D>();
+                if (player != null)
+                {
+                    player.TakeDamage(_damage, _direction);
+                    TriggerImpactAndDestroy();
+                }
+                return;
+            }
+
             var slime = other.GetComponent<SlimeEnemy2D>();
             if (slime != null)
             {
                 slime.ApplySpellHit(_sourceSpell, _direction, _boostMultiplier);
+                TriggerImpactAndDestroy();
+                return;
+            }
+
+            var mage = other.GetComponent<ElementalMageEnemy2D>();
+            if (mage != null)
+            {
+                mage.ApplySpellHit(_sourceSpell, _direction, _boostMultiplier);
+                TriggerImpactAndDestroy();
+                return;
+            }
+
+            var boss = other.GetComponent<MinotaurBossEnemy2D>();
+            if (boss != null)
+            {
+                boss.ApplySpellHit(_sourceSpell, _direction, _boostMultiplier);
                 TriggerImpactAndDestroy();
                 return;
             }
